@@ -36,7 +36,7 @@ body{
 	height: 100%;
 	background-size: cover;
 	background-position: center;
-	z-index:1;
+	z-index:-1;
 	display:none;
 	padding:0 15px;
 	animation: slide 2s ease;
@@ -63,7 +63,7 @@ body{
 	 flex-grow: 1;
 }
 .home .caption{
-	width:50%;
+	width:70%;
 }
 .home .caption h1{
 	font-size:4.5vw;
@@ -227,6 +227,18 @@ padding-top:0;
 	border-right: 35vw solid transparent;
 	border-left: 35vw solid rgba(43, 45, 54, 0.47);
 	border-bottom: 70vw solid rgba(43, 45, 54, 0.47);
+	opacity:0;
+	animation: captionText .5s ease forwards;
+	animation-delay:1s;
+
+
+}
+.cover{
+	width: 0;
+	height: 0;
+	border-right: 0vw solid transparent;
+	border-left: 100vw solid rgba(8, 8, 9, 0.35);
+	border-bottom: 70vw solid rgba(8, 8, 9, 0.35);
 	opacity:0;
 	animation: captionText .5s ease forwards;
 	animation-delay:1s;
@@ -592,6 +604,18 @@ height: 20px;
   border: 1px solid rgba(203, 31, 31, 0);
 
 }
+
+.imageport{
+	position: absolute;
+	z-index: 4;
+	left: 38%;
+	bottom: 10%;
+	opacity:0;
+	animation: captionText .5s ease forwards;
+	animation-delay:1s;
+
+	align-items: center;
+}
 .menu-btn__burger {
 	  position: relative;
 	display: flex;
@@ -717,4 +741,80 @@ height: 20px;
 .content {
   margin-left: 75px;
   font-size: 30px;
+}
+
+.animaline {
+      position: absolute;
+      top: 30%;
+			left: 40%;
+      width: 56em;
+
+      margin: 0 auto;
+			color: #22335cff;
+      font-size: 380%;
+
+      white-space: nowrap;
+      overflow: hidden;transform: translateY(-50%);
+			font-family: 'Lobster', cursive;
+}
+.cajacentro{
+	position: relative;
+	text-align: center;
+	align-items: center;
+}
+.animaline1 {
+      position: absolute;
+
+      top: 50%;
+			left: 30%;
+      width: 56em;
+
+      margin: 0 auto;
+			color: #22335cff;
+      font-size: 380%;
+
+      white-space: nowrap;
+      overflow: hidden;transform: translateY(-50%);
+			font-family: 'Lobster', cursive;
+			align-items: center;
+}
+
+
+
+/*Animation*/
+
+.anim-typewriter {
+      animation: typewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 16em;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(201, 39, 39, 0);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+@media only screen and (max-device-width: 1200px) {
+  .animaline1 {
+
+		left: 18%;
+		font-size: 200%;
+
+  }
+	.animaline {
+				left: 35%;
+	      font-size: 200%;
+
+	}
 }
