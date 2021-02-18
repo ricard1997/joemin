@@ -66,7 +66,7 @@ body{
 	width:70%;
 }
 .home .caption h1{
-	font-size:4.5vh;
+	font-size:8vh;
   font-style:italic;
   font-weight: bold;
 
@@ -82,7 +82,7 @@ body{
 	animation-delay:1s;
 }
 .home .caption p{
-	font-size: 1.5vw;
+	font-size: 2.5vh;
 	margin:15px 0 30px;
   font-style: normal;
   font-weight: bold;
@@ -202,7 +202,7 @@ body{
 }
 
 .centercaj1{
-	  text-align: center;
+	text-align: center;
 	font-size:4.5vw;
   font-style:normal;
   font-weight: bold;
@@ -426,8 +426,15 @@ padding-right: 1.1rem;
 
 }
 
-
-
+.portada1 {
+	background-image: url("port.png");
+}
+.portada {
+	background-image: url("port.jpg");
+}
+.portada3 {
+	background-image: url("port5.png");
+}
 .parallax {
   /* The image used */
   background-image: url("nuevaf.jpg");
@@ -554,6 +561,16 @@ padding: 0px;
 		width: 100px;
 		height: auto;
   }
+	.portada1{
+		background-image: url("portcel.jpg");
+	}
+	.portada3{
+		background-image: url("port3d.jpg");
+	}
+	.home .caption h1{
+		font-size:5vh;
+
+	}
 }
 
 @media only screen and (max-device-width: 800px) {
