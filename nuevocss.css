@@ -1331,6 +1331,14 @@ main {
 
 .section {
   position: relative;
+
+  background-position: center;
+  background-color: #2d3036;
+  background-size: cover;
+}
+
+.section1 {
+  position: relative;
   padding: 100px 0 100px;
   background-position: center;
   background-color: #2d3036;

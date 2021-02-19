@@ -214,10 +214,14 @@ body {
   text-align: center;
   font-size: 4.5vw;
   font-style: normal;
-  font-weight: bold;
+
   /*font-variant: small-caps;*/
   color: #ffa630;
   font-family: Helvetica;
+}
+
+.prioridad{
+	z-index: 4;
 }
 
 .cajder {
@@ -420,6 +424,8 @@ body {
 
 .blanco {
   color: #fff;
+	font-size: 20px;
+	font-weight: 510;
 }
 
 @keyframes mover {
@@ -479,6 +485,7 @@ background-image: url("footer	.jpeg");
 	  opacity: 0;
 	  animation: captionText .5s ease forwards;
 	  animation-delay: 1s;
+		z-index: 0;
 }
 
 .parallax1 {
